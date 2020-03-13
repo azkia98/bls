@@ -25,6 +25,7 @@
     "yargs": "^15.3.0"
   },
   "dependencies": {
+    "fuse.js": "^4.0.4-beta",
     "jquery": "^3.4.1",
     "material-design-icons": "^3.0.1",
     "shabnam-font": "^5.0.0",

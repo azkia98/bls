@@ -2,6 +2,6 @@
 
 @section('content')
 
-<plans-component></plans-component>
+<plans-component :prop_plans="{{ $plans->values() }}"></plans-component>
 
 @endsection
