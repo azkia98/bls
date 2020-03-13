@@ -210,7 +210,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     serachInPlans: function serachInPlans() {
-      // console.log(this.serach_input)
+      if (this.serach_input == "" || this.serach_input == null) {
+        this.plans = this.prop_plans;
+        return;
+      }
+
       var options = {
         shouldSort: true,
         threshold: 0.6,
@@ -11531,7 +11535,7 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("section", { staticClass: "mt-12 flex justify-center mb-24 lg:mb-32" }, [
-      _c("div", { staticClass: "container flex" }, [
+      _c("div", { staticClass: "container flex justify-center" }, [
         _c(
           "div",
           { staticClass: "cards flex flex-wrap justify-center" },

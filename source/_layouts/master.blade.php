@@ -16,15 +16,21 @@
 </head>
 
 <body>
-    <div id="app" class="bg-gray-200">
+    <div id="app" class="bg-gray-200 h-screen">
+        
 
-        <navbar url="{{ $page->getUrl() }}"></navbar>
+        <div class="page-wrap bg-gray-200">
+
+            <navbar url="{{ $page->getUrl() }}"></navbar>
+            @yield('content')
+
+        </div>
 
 
-        @yield('content')
 
-
-        @include('_partials.footer')
+        <div class="site-footer">
+            @include('_partials.footer')
+        </div>
 
         {{-- <div class="h-56 mt-64"></div> --}}
     </div>

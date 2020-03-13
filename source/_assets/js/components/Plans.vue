@@ -32,7 +32,7 @@
 
         <!-- Seconde Section -->
         <section class="mt-12 flex justify-center mb-24 lg:mb-32">
-            <div class="container flex">
+            <div class="container flex justify-center">
                 <div class="cards flex flex-wrap justify-center">
                     <a
                         :href="`/plans/${plan._meta.filename}`"
@@ -61,7 +61,12 @@ export default {
     },
     methods: {
         serachInPlans() {
-            // console.log(this.serach_input)
+            if (this.serach_input == "" || this.serach_input == null) {
+                this.plans = this.prop_plans;
+
+                return;
+            }
+
             var options = {
                 shouldSort: true,
                 threshold: 0.6,

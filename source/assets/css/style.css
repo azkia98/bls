@@ -19,8 +19,20 @@ $navbarFontSize: 1.3333333333333333rem;
 
 */
 
-.text-purple {
-  color: #6323c6 !important;
+.page-wrap {
+  min-height: 100vh;
+  /* equal to footer height */
+  margin-bottom: -216px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+  background: #edf2f7;
+}
+
+.site-footer, .page-wrap:after {
+  height: 216px;
 }
 
 body {
