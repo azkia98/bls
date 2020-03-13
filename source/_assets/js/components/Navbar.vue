@@ -2,9 +2,9 @@
   <header class="bg-gray-200 sm:flex sm:justify-between sm:items-center md:px-20 sm:px-5 sm:py-3 sm:pt-6">
 
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-      <a href="#" class="block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800">صفحه اصلی</a>
-      <a href="#" class="mt-1 block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800 sm:mt-0 sm:ml-2">برنامه کلاسی</a>
-      <a href="#" class="mt-1 block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800 sm:mt-0 sm:ml-2">درباره ما</a>
+      <a href="/" class="block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800" :class="{ 'text-gray-800' : isActiveUrl('/')}">صفحه اصلی</a>
+      <a href="/plans" class="mt-1 block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800 sm:mt-0 sm:ml-2" :class="{ 'text-gray-800' : isActiveUrl('/plans')}" >برنامه کلاسی</a>
+      <a href="/about-us" class="mt-1 block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800 sm:mt-0 sm:ml-2" :class="{ 'text-gray-800' : isActiveUrl('/about-us')}" >درباره ما</a>
     </nav>
 
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
@@ -27,10 +27,16 @@
 
 <script>
 export default {
+  props:['url'],
   data() {
     return {
       isOpen: false,
     }
   },
+  methods:{
+    isActiveUrl(url){
+      return this.url == url;
+    }
+  }
 }
 </script>

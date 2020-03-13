@@ -123,10 +123,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['url'],
   data: function data() {
     return {
       isOpen: false
     };
+  },
+  methods: {
+    isActiveUrl: function isActiveUrl(url) {
+      return this.url == url;
+    }
   }
 });
 
@@ -11244,7 +11250,8 @@ var render = function() {
             {
               staticClass:
                 "block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800",
-              attrs: { href: "#" }
+              class: { "text-gray-800": _vm.isActiveUrl("/") },
+              attrs: { href: "/" }
             },
             [_vm._v("صفحه اصلی")]
           ),
@@ -11254,7 +11261,8 @@ var render = function() {
             {
               staticClass:
                 "mt-1 block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800 sm:mt-0 sm:ml-2",
-              attrs: { href: "#" }
+              class: { "text-gray-800": _vm.isActiveUrl("/plans") },
+              attrs: { href: "/plans" }
             },
             [_vm._v("برنامه کلاسی")]
           ),
@@ -11264,7 +11272,8 @@ var render = function() {
             {
               staticClass:
                 "mt-1 block px-2 py-1 text-gray-600 font-medium rounded hover:text-gray-800 sm:mt-0 sm:ml-2",
-              attrs: { href: "#" }
+              class: { "text-gray-800": _vm.isActiveUrl("/about-us") },
+              attrs: { href: "/about-us" }
             },
             [_vm._v("درباره ما")]
           )
