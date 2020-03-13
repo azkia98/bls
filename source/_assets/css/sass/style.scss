@@ -1,0 +1,21 @@
+// @import "../../../../node_modules/shabnam-font/dist/font-face.css";
+// @import "../../../../node_modules/shabnam-font/dist/font-face.css";
+@import "_media_queries";
+@import "variables";
+@import "root";
+
+
+body{
+    font-family: $shabnam;
+    direction: rtl;
+}
+
+
+
+
+@import "index";
+@import "plans";
+@import "about_us";
+
+
+

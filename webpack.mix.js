@@ -8,10 +8,13 @@ mix.setPublicPath('source/assets/');
 mix.webpackConfig({
   plugins: [
     build.jigsaw,
-    build.browserSync(),
+    // build.browserSync(),
     build.watch(['source/**/*.md', 'source/**/*.php', 'source/_assets/**/*', '!source/**/_tmp/*', '!source/assets/**/*']),
   ]
 });
+
+mix
+  .sass('source/_assets/css/sass/style.scss','css');
 
 mix.options({
     processCssUrls: false,
@@ -26,3 +29,6 @@ mix.options({
     folders: ['source'],
   })
   .version();
+
+  
+mix.disableNotifications();

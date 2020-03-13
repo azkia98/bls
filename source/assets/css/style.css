@@ -1,0 +1,116 @@
+/* 
+====================
+    Devices
+====================
+*/
+
+/* 
+$main_heading_title: 6rem;
+$numbers: 4rem;
+$paragraph: 1.5rem;
+$paragraph_spacing: 2.8rem;
+$buttonsAndNumberSmallDetailText: 1.5rem;
+$navbarFontSize: 1.3333333333333333rem;
+ */
+
+/* 
+
+    Object Colors
+
+*/
+
+.text-purple {
+  color: #6323c6 !important;
+}
+
+body {
+  font-family: "Shabnam", sans-serif;
+  direction: rtl;
+}
+
+.circle-background {
+  content: " ";
+  left: -3px;
+  top: -2px;
+}
+
+.z--10 {
+  z-index: -10;
+}
+
+.third_section__rectangle {
+  width: 250px;
+  height: 250px;
+}
+
+@media (min-width: 1024px) {
+  .third_section__rectangle {
+    border-radius: 15px;
+    box-shadow: 0 3px 99px 0 rgba(0, 0, 0, 0.16);
+  }
+}
+
+.fourth_section__image {
+  left: 0;
+  bottom: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.map {
+  width: 920px;
+  height: 467px;
+  margin-bottom: 1rem;
+  bottom: inherit;
+}
+
+@media (min-width: 1024px) {
+  .map {
+    bottom: -20px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .input_search {
+    width: 530px;
+  }
+}
+
+.m-box-shadow-1, .cards__card:hover {
+  box-shadow: 0 3px 99px 0 rgba(0, 0, 0, 0.16);
+}
+
+.m-box-shadow-light, .cards__card {
+  box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cards__card {
+  height: 140px;
+  width: 140px;
+  transition: all 0.2s;
+  margin-bottom: 1.8rem;
+  margin-left: 1.8rem;
+}
+
+.plan__table {
+  border-collapse: separate;
+  border-spacing: 1rem 0em;
+}
+
+.plan__table tr,
+.plan__table th {
+  background-color: white;
+}
+
+.plan__table tbody tr:last-child td {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.about_us__image {
+  width: 674px;
+  height: 441px;
+  border-radius: 15px;
+  box-shadow: 0 3px 99px 0 rgba(0, 0, 0, 0.1);
+}

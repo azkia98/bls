@@ -1,0 +1,47 @@
+.input_search {
+  @include lg {
+    width: 530px;
+  }
+}
+
+.m-box-shadow-1 {
+  box-shadow: 0 3px 99px 0 rgba(0, 0, 0, 0.16);
+}
+
+.m-box-shadow-light {
+  box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cards__card {
+  // padding: 10rem;
+  height: 140px;
+  width: 140px;
+  @extend .m-box-shadow-light;
+  transition: all 0.2s;
+
+  margin-bottom: 1.8rem;
+
+  margin-left: 1.8rem;
+  &:hover {
+    @extend .m-box-shadow-1;
+  }
+}
+
+.plan__table {
+  border-collapse: separate;
+  border-spacing: 1rem 0em;
+
+  tr,
+  th {
+    background-color: white;
+  }
+
+  tbody {
+    tr:last-child {
+      td {
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+    }
+  }
+}
