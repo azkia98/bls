@@ -44,4 +44,9 @@
 
 </section>
 <!-- End Second Section -->
+
+
+@include('_partials.address')
+
+
 @endsection
