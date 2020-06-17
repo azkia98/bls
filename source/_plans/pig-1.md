@@ -3,10 +3,11 @@ extends: _layouts.plan
 title: pig 1
 date: 2017-03-23
 section: plan
+bbb_link: https://engage.webamooz.com/b/mah-wtc-pr9
+description: 1111fdsaf
 ---
 
 <table class="plan__table text-center whitespace-no-wrap">
-
     <thead>
         <tr>
             <th class="px-4 py-2 rounded-t-lg">
@@ -32,7 +33,6 @@ section: plan
         </tr>
     </thead>
     <tbody>
-
         <tr>
             <td class="px-4 py-2">1</td>
             <td class="px-4 py-2">Unit 5 (1-2-3)</td>
@@ -68,7 +68,6 @@ section: plan
             <td class="px-4 py-2">68</td>
             <td class="px-4 py-2">Whole genome</td>
         </tr>
-
     </tbody>
 
 </table>

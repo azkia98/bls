@@ -1,9 +1,14 @@
 ---
 extends: _layouts.plan
-title: Pig 4 
+title: pig 4
 date: 2017-03-23
 section: plan
+bbb_link: https://engage.webamooz.com/b/mah-wtc-pr9
 ---
+
+
+
+
 
 <table class="plan__table text-center whitespace-no-wrap">
 
@@ -68,49 +73,8 @@ section: plan
             <td class="px-4 py-2">68</td>
             <td class="px-4 py-2">Whole genome</td>
         </tr>
-        <tr>
-            <td class="px-4 py-2">1</td>
-            <td class="px-4 py-2">Unit 5 (1-2-3)</td>
-            <td class="px-4 py-2">Unit 18, Listening 1,2</td>
-            <td class="px-4 py-2">68</td>
-            <td class="px-4 py-2">Whole genome</td>
-        </tr>
-        <tr>
-            <td class="px-4 py-2">1</td>
-            <td class="px-4 py-2">Unit 5 (1-2-3)</td>
-            <td class="px-4 py-2">Unit 18, Listening 1,2</td>
-            <td class="px-4 py-2">68</td>
-            <td class="px-4 py-2">Whole genome</td>
-        </tr>
-        <tr>
-            <td class="px-4 py-2">1</td>
-            <td class="px-4 py-2">Unit 5 (1-2-3)</td>
-            <td class="px-4 py-2">Unit 18, Listening 1,2</td>
-            <td class="px-4 py-2">68</td>
-            <td class="px-4 py-2">Whole genome</td>
-        </tr>
-        <tr>
-            <td class="px-4 py-2">1</td>
-            <td class="px-4 py-2">Unit 5 (1-2-3)</td>
-            <td class="px-4 py-2">Unit 18, Listening 1,2</td>
-            <td class="px-4 py-2">68</td>
-            <td class="px-4 py-2">Whole genome</td>
-        </tr>
-        <tr>
-            <td class="px-4 py-2">1</td>
-            <td class="px-4 py-2">Unit 5 (1-2-3)</td>
-            <td class="px-4 py-2">Unit 18, Listening 1,2</td>
-            <td class="px-4 py-2">68</td>
-            <td class="px-4 py-2">Whole genome</td>
-        </tr>
-        <tr>
-            <td class="px-4 py-2">1</td>
-            <td class="px-4 py-2">Unit 5 (1-2-3)</td>
-            <td class="px-4 py-2">Unit 18, Listening 1,2</td>
-            <td class="px-4 py-2">68</td>
-            <td class="px-4 py-2">Whole genome</td>
-        </tr>
 
     </tbody>
 
 </table>
+
